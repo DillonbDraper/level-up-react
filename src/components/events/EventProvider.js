@@ -15,7 +15,7 @@ export const EventProvider = (props) => {
             .then(setEvents)
     }
 
-    const createGame = event => {
+    const createEvent = event => {
         return fetch("http://localhost:8000/events", {
             method: "POST",
             headers: {
